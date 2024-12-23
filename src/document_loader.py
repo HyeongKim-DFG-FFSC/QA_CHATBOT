@@ -1,8 +1,9 @@
 # document_loader.py
 from typing import List, Dict
 import os
-from langchain.document_loaders import UnstructuredPDFLoader
+#from langchain.document_loaders import UnstructuredPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import UnstructuredPDFLoader
 
 
 def load_and_split_documents(directory_path: str) -> List[Dict]:
